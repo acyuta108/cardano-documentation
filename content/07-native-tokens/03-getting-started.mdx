@@ -123,16 +123,10 @@ The syntax for TxOut values has been extended to include multi-asset tokens. The
 
 To receive tokens, you just need to specify any address. It is not necessary to use special addresses to hold multi-asset tokens.
 
-To inspect the values in an address, you need to view a UTxO value using:
+You can see the UTXOs for a specific address using the `--address` `$ADDRESS` option:
 
 ```
-cardano-cli shelley query utxo --mary-era
-```
-
-This will show the content of any token bundles that you possess. You can choose to see a specific address using the `--address` `$ADDRESS` option:
-
-```
-cardano-cli shelley query utxo --address "$ADDRESS" --mary-era
+cardano-cli query utxo --address "$ADDRESS" --mainnet
 ```
 
 ### Token minting policies
